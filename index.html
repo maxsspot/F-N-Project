@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+		<title>Foods & Nutrition Project</title>
+	</head>
+	<body>
+		<h1 id = "centeredstuff">POTASSIUM</h1>
+        <button id = "hoi" onclick = "start()">Start Slides</button>
+        <div id = "pep">
+            <br>
+            <h4>Q: Is it a vitamin or a mineral? If it is a vitamin is it fat soluble or water soluble?</h4>
+            <br>
+            <hr>
+            <br>
+            <p>Potassium is a mineral.</p>
+        </div>
+        <div id = "pep1">
+            <br>
+            <h4>Q: What are the 3 main functions of the vitamin/mineral?</h4>
+            <br>
+            <hr>
+            <br>
+            <p>Serves as an electrolyte, it regulates fluid balance, and is good for your nervous system!</p>
+        </div>
+        <div id = "pep2">
+            <br>
+            <h4>Q: What are the daily recommendations for children, women, men, elderly?</h4>
+            <br>
+            <hr>
+            <br>
+            <p>Children: 2,500 mg, Adult men: 3,400 mg, Adult women: 2,600 mg, Elderly: 4,700 mg.</p>
+        </div>
+        <div id = "pep3">
+            <br>
+            <h4>Q: What are the deficiency symptoms?</h4>
+            <br>
+            <hr>
+            <br>
+            <p>Under eating, eating disorders, etc.</p>
+        </div>
+        <div id = "pep4">
+            <br>
+            <h4>Q: What are the toxicity symptoms?</h4>
+            <br>
+            <hr>
+            <br>
+            <p>Muscle Weakness, Numbness & Tingling etc.</p>
+        </div>
+        <style>
+        * {
+    margin:0;
+    padding:0;
+}
+
+body {
+	font-family:"Poppins", sans-serif;
+    background-color:black;
+    color:white;
+    text-align:center;
+}
+
+#centeredstuff, #hoi, #etext {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hoi{
+    top:60%;
+    width:250px;
+    height:50px;
+    background-color:transparent;
+    border: solid 2px;
+    border-radius:5px;
+    color:white;
+}
+
+#hoi:hover {
+    border:orange solid 2px;
+}
+
+#hoi:active {
+    background-color:orange;
+}
+
+button {
+    font-family:"Poppins", sans-serif;
+    cursor:pointer;
+    transition:all 1s;
+}
+
+#pep, #pep1, #pep2, #pep3, #pep4 {
+    width:100%;
+    height:999vh;
+    position:fixed;
+    background-color:black;
+    left:-100%;
+    transition:all 1s;
+}
+
+hr {
+    width:95%;
+    color:white;
+    margin:auto;
+    border:white solid 1px;
+}
+        </style>
+        <script>
+          function start () {
+    document.getElementById ("pep").style.left = "0px";
+    setTimeout(function(){ document.getElementById ("pep1").style.left = "0px"; }, 5000);
+    setTimeout(function(){ document.getElementById ("pep2").style.left = "0px"; }, 10000);
+    setTimeout(function(){ document.getElementById ("pep3").style.left = "0px"; }, 15000);
+    setTimeout(function(){ document.getElementById ("pep4").style.left = "0px"; }, 20000);
+    setTimeout(function(){ window.open ("https://www.youtube.com/watch?v=RHOK3HvvnVs", "_blank"); }, 25000);
+}
+
+document.addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+        start();
+    }
+});
+
+document.addEventListener('dblclick', () => {
+      document.documentElement.requestFullscreen().catch((e) => {
+         console.log(e);
+      });
+   });
+        </script>
+    </body>
+</html>
