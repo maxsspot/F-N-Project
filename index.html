@@ -109,7 +109,9 @@ hr {
 }
         </style>
         <script>
+		var audio = new Audio('click.wav');
           function start () {
+		  audio.play();
     document.getElementById ("pep").style.left = "0px";
     setTimeout(function(){ document.getElementById ("pep1").style.left = "0px"; }, 8000);
     setTimeout(function(){ document.getElementById ("pep2").style.left = "0px"; }, 16000);
