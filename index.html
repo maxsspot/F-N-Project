@@ -14,6 +14,7 @@
             <hr>
             <br>
             <p>Potassium is a mineral.</p>
+		<button id = "hoi" onclick = "nex1()">next</button>
         </div>
         <div id = "pep1">
             <br>
@@ -118,14 +119,14 @@ hr {
     document.getElementById ("pep4").style.left = "0px"; }, 80000);
     window.open ("https://www.youtube.com/shorts/SEH0Y-f3qt0", "_blank");
 }
-
-document.addEventListener("keyup", function(event) {
-    if (event.key === "q") {
-        document.getElementById ("pep").style.left = "0px";
-    } else if (event.key === "2) {
-	           document.getElementById ("pep1").style.left = "0px"; 
-	       }
-});
+		
+		function start () {
+			document.getElementById ("pep").style.left = "0px";
+		}
+		
+		function nex1 () {
+		document.getElementById ("pep1").style.left = "0px"; 	
+		}
 		
 		
 
